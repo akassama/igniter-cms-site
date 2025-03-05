@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Additional overlay for subtlety */
+    z-index: 1;
+    filter: blur(2px); /* Slight blur effect */
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem; /* Larger font size for prominence */
+    letter-spacing: 2px; /* Add spacing between letters */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+}
+
+.hero-section p.lead {
+    font-size: 1.5rem; /* Larger subheading */
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .btn {
+    font-size: 1.2rem; /* Larger button text */
+    padding: 10px 30px; /* Increase button padding */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hero-section .btn:hover {
+    transform: scale(1.1); /* Slightly enlarge buttons on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Hover Animations */
+.card-hover {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-hover img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-hover:hover img {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+/* Custom Styles for Feature Cards */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#icon-features .icon-feature {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #icon-features .icon-feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  #icon-features i {
+    color: #007bff;
+  }
+  
+  #icon-features h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  #icon-features p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 150px 0; /* Adjust padding for smaller screens */
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+    }
+
+    .hero-section p.lead {
+        font-size: 1.2rem; /* Smaller subheading */
+    }
+}
