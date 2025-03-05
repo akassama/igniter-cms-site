@@ -74,7 +74,7 @@
                     <h1>Empower Your Digital Presence</h1>
                     <p class="lead">Igniter CMS is a free, open-source content management system, built on top of the CodeIgniter PHP framework.</p>
                     <p>With Igniter CMS, you can manage various types of content, including blogs, pages, portfolios, events, and more. It's flexible, extensible, and designed to help you build modern websites with ease.</p>
-                    <a href="https://docs.igniter-cms.aktools.net" class="btn btn-outline-primary btn-lg mt-3">Read Documentation</a>
+                    <a href="https://igniter-cms.aktools.net/docs" class="btn btn-outline-primary btn-lg mt-3">Read Documentation</a>
                 </div>
                 <div class="col-md-6 text-center">
                     <img src="assets/img/igniter-cms-dashboard.png" alt="Igniter CMS Overview" class="img-fluid rounded shadow">
