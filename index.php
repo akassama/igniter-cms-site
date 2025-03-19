@@ -6,6 +6,8 @@
     <title>Igniter CMS - Modern Content Management System</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- AOS Library CSS -->
@@ -49,6 +51,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="https://igniter-cms.aktools.net/docs" target="_blank">Documentation</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/akassama/igniter-cms/archive/refs/heads/main.zip">
+                            <i class="bi bi-cloud-download-fill"></i>
+                            Download (v1.0.0)
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -58,7 +66,7 @@
     <section id="home" class="hero-section d-flex align-items-center justify-content-center text-center">
         <div class="container">
             <h1 class="display-3 fw-bold text-white mb-4  animate__animated animate__fadeInDown">Igniter CMS</h1>
-            <p class="lead text-white fs-4 mb-5 animate__animated animate__fadeInUp">A powerful, versatile Content Management System built on CodeIgniter 4.</p>
+            <p class="lead text-white fs-4 mb-5 animate__animated animate__fadeInUp">A robust and flexible Content Management System powered by CodeIgniter 4.</p>
             <div class="d-flex justify-content-center gap-3">
                 <a href="https://github.com/akassama/igniter-cms" target="_blank" class="btn btn-primary btn-lg px-5 animate__animated animate__fadeIn">View Project</a>
                 <a href="https://demo.igniter-cms.aktools.net" target="_blank" class="btn btn-outline-light btn-lg px-5 animate__animated animate__fadeIn">Live Demo</a>
@@ -134,56 +142,56 @@
         </div>
     </section>
 
-      <!-- Icon Features Section -->
-  <section id="icon-features" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Why Choose Igniter CMS?</h2>
-      <div class="row text-center">
-        <div class="col-md-4 mb-4">
-          <div class="icon-feature">
-            <i class="fas fa-cubes fa-3x mb-3"></i>
-            <h4>Flexible & Fully Extensible</h4>
-            <p>Easily extend the core functionality with plugins and modules.</p>
-          </div>
+    <!-- Icon Features Section -->
+    <section id="icon-features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose Igniter CMS?</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                    <div class="icon-feature">
+                        <i class="fas fa-cubes fa-3x mb-3"></i>
+                        <h4>Flexible & Fully Extensible</h4>
+                        <p>Easily extend the core functionality with plugins and modules.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                    <div class="icon-feature">
+                        <i class="fas fa-palette fa-3x mb-3"></i>
+                        <h4>Customize Theme Designs</h4>
+                        <p>Create unique designs with customizable themes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                    <div class="icon-feature">
+                        <i class="fas fa-search fa-3x mb-3"></i>
+                        <h4>Search Engine Friendly</h4>
+                        <p>Optimized for SEO to help your website rank higher.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                    <div class="icon-feature">
+                        <i class="fas fa-globe fa-3x mb-3"></i>
+                        <h4>Multilingual</h4>
+                        <p>Supports multiple languages for global reach.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                    <div class="icon-feature">
+                        <i class="fas fa-rocket fa-3x mb-3"></i>
+                        <h4>Fast & Lightweight</h4>
+                        <p>Built for performance with minimal overhead.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                    <div class="icon-feature">
+                        <i class="fas fa-code fa-3x mb-3"></i>
+                        <h4>Open Source</h4>
+                        <p>Fully open-source and community-driven.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="icon-feature">
-            <i class="fas fa-palette fa-3x mb-3"></i>
-            <h4>Customize Theme Designs</h4>
-            <p>Create unique designs with customizable themes.</p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="icon-feature">
-            <i class="fas fa-search fa-3x mb-3"></i>
-            <h4>Search Engine Friendly</h4>
-            <p>Optimized for SEO to help your website rank higher.</p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="icon-feature">
-            <i class="fas fa-globe fa-3x mb-3"></i>
-            <h4>Multilingual</h4>
-            <p>Supports multiple languages for global reach.</p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="icon-feature">
-            <i class="fas fa-rocket fa-3x mb-3"></i>
-            <h4>Fast & Lightweight</h4>
-            <p>Built for performance with minimal overhead.</p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="icon-feature">
-            <i class="fas fa-code fa-3x mb-3"></i>
-            <h4>Open Source</h4>
-            <p>Fully open-source and community-driven.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
     <!-- Websites Using Igniter CMS -->
     <section id="websites" class="py-5" data-aos="fade-up" data-aos-duration="1000">
@@ -194,7 +202,12 @@
                     <div class="card h-100 shadow-sm card-hover">
                         <img src="assets/img/site/ak-tools.png" alt="AK Tools" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">AK Tools</h5>
+                            <h5 class="card-title">
+                                <a href="https://aktools.net/" class="text-decoration-none" target="_blank">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                                AK Tools
+                            </h5>
                             <p class="card-text">A collection of useful online tools to simplify your life.</p>
                         </div>
                     </div>
@@ -203,21 +216,39 @@
                     <div class="card h-100 shadow-sm card-hover">
                         <img src="assets/img/site/gamsecure-tech.png" alt="GamsecureTech" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">GamsecureTech</h5>
+                            <h5 class="card-title">
+                                <a href="https://gamsecuretech.com/" class="text-decoration-none" target="_blank">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>GamsecureTech
+                            </h5>
                             <p class="card-text">A cybersecurity and IT consultancy firm.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="card h-100 shadow-sm card-hover">
-                        <img src="assets/img/site/akassama.png" alt="AK Portfolio" class="card-img-top">
+                        <img src="assets/img/site/akassama-home.png" alt="AK Portfolio" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">AK Portfolio</h5>
+                            <h5 class="card-title" class="text-decoration-none">
+                                <a href="https://abdouliekassama.com/" class="text-decoration-none" target="_blank">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>AK Portfolio
+                            </h5>
                             <p class="card-text">Portfolio and blog site for Abdoulie Kassama.</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="support" class="py-5 text-center bg-light">
+        <div class="container">
+            <h2>Support Igniter CMS</h2>
+            <p>If you find this project helpful, consider buying me a coffee:</p>
+            <a href="https://www.buymeacoffee.com/akassama" target="_blank">
+                <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="160">
+            </a>
         </div>
     </section>
 
@@ -228,6 +259,7 @@
             <p>
                 <a href="https://github.com/akassama/igniter-cms/blob/main/LICENSE" target="_blank" class="text-white">MIT License</a> |
                 <a href="https://igniter-cms.aktools.net/docs" target="_blank" class="text-white">Documentation</a>
+                <a href="https://buymeacoffee.com/akassama" target="_blank" class="text-white">Buy me a coffee</a>
             </p>
         </div>
     </footer>

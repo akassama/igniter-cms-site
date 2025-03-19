@@ -105,28 +105,32 @@ body {
     border: 1px solid #ddd;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  #icon-features .icon-feature:hover {
+    display: flex; /* Added to make the content flex */
+    flex-direction: column; /* Added to make the content flex column */
+    height: 100%; /* added to make the inner div take the full height of the parent*/
+}
+
+#icon-features .icon-feature:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  }
-  
-  #icon-features i {
+}
+
+#icon-features i {
     color: #007bff;
-  }
-  
-  #icon-features h4 {
+}
+
+#icon-features h4 {
     font-size: 1.25rem;
     font-weight: bold;
     margin-top: 10px;
-  }
-  
-  #icon-features p {
+}
+
+#icon-features p {
     font-size: 0.9rem;
     color: #555;
-  }
-  
+    flex-grow: 1; /* Allows the paragraph to take up remaining space */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section {
