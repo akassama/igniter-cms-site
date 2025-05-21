@@ -1,148 +1,150 @@
-/* General Styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+:root {
+    --primary: #ff6b35;
+    --primary-dark: #e05a2b;
+    --secondary: #004e89;
+    --dark: #292929;
+    --light: #f7f7f7;
+    --gray: #6c757d;
 }
 
-.hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/hero-bg.jpg') no-repeat center center/cover;
-    height: 100vh;
-    position: relative;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+.bg-primary-gradient {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.hero {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    background: linear-gradient(135deg, rgba(255,107,53,0.1) 0%, rgba(0,78,137,0.05) 100%);
+}
+
+.site-showcase img {
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.site-showcase img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-preview {
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Additional overlay for subtlety */
-    z-index: 1;
-    filter: blur(2px); /* Slight blur effect */
+.nav-link {
+    font-weight: 500;
 }
 
-.hero-section .container {
-    position: relative;
-    z-index: 2; /* Ensure text is above the overlay */
+footer {
+    background-color: var(--dark);
 }
 
-.hero-section h1 {
-    font-size: 3.5rem; /* Larger font size for prominence */
-    letter-spacing: 2px; /* Add spacing between letters */
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+.footer-link {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.hero-section p.lead {
-    font-size: 1.5rem; /* Larger subheading */
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+.footer-link:hover {
+    color: white;
 }
 
-.hero-section .btn {
-    font-size: 1.2rem; /* Larger button text */
-    padding: 10px 30px; /* Increase button padding */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s;
 }
 
-.hero-section .btn:hover {
-    transform: scale(1.1); /* Slightly enlarge buttons on hover */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+.social-icon:hover {
+    background-color: var(--primary);
+    transform: translateY(-3px);
 }
 
-/* Card Hover Animations */
-.card-hover {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+/* Support Section */
+.support-section {
+    padding: 5rem 0;
+    background-color: var(--light);
 }
 
-.card-hover:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+.support-section h2 {
+    margin-bottom: 1.5rem;
 }
 
-.card-hover img {
-    transition: transform 0.3s ease-in-out;
+.support-section p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: var(--gray);
 }
 
-.card-hover:hover img {
-    transform: scale(1.1); /* Zoom in on hover */
-}
-
-/* Custom Styles for Feature Cards */
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
-
-.card {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Themes */
+.theme-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.theme-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
 }
 
-.card-body {
+.theme-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-card .card-body {
     padding: 1.5rem;
 }
 
-.card-title {
+.theme-card .card-title {
     font-size: 1.25rem;
-    font-weight: bold;
     margin-bottom: 0.75rem;
 }
 
-.card-text {
-    font-size: 0.9rem;
-    color: #555;
-}
-
-#icon-features .icon-feature {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex; /* Added to make the content flex */
-    flex-direction: column; /* Added to make the content flex column */
-    height: 100%; /* added to make the inner div take the full height of the parent*/
-}
-
-#icon-features .icon-feature:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-#icon-features i {
-    color: #007bff;
-}
-
-#icon-features h4 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-#icon-features p {
-    font-size: 0.9rem;
-    color: #555;
-    flex-grow: 1; /* Allows the paragraph to take up remaining space */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-section {
-        height: auto;
-        padding: 150px 0; /* Adjust padding for smaller screens */
-    }
-
-    .hero-section h1 {
-        font-size: 2.5rem; /* Smaller font size for mobile */
-    }
-
-    .hero-section p.lead {
-        font-size: 1.2rem; /* Smaller subheading */
-    }
+.theme-card .card-text {
+    margin-bottom: 1.5rem;
 }
