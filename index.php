@@ -648,13 +648,13 @@
             </div>
           </div>
           <div class="text-center mt-5">
-            <a
+            <!-- <a
               href="https://themes.ignitercms.com/"
               class="btn btn-primary"
               target="_blank"
             >
               <i class="ri-palette-line me-2"></i>View All Themes
-            </a>
+            </a> -->
           </div>
         </div>
       </section>
