@@ -113,6 +113,15 @@
             person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
         })
     </script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GH1H47J504"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-GH1H47J504');
+	</script>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
